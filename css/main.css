@@ -1,0 +1,40 @@
+/*
+    this is a multinline comment
+*/
+[data-anil1="1"]{
+    /*
+    state 1
+    */
+    width: 200px;
+    height: 200px;
+    background: red;
+    border: 10px solid black;
+    /* margin:t/b L/R */
+    margin: 100px auto;
+    transform: rotate(0deg);
+    transition: all 2s linear;
+    animation-name:xyz;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+    
+    
+}
+@keyframes xyz{
+    from{
+        transform: rotate(0deg);
+        background: red;
+    }
+    to{
+        transform: rotate(360deg);
+        background: green;
+    }
+}
+[data-anil1="1"]:hover{
+    /*
+    state 2
+    */
+    background: green;
+    transform: rotate(360deg);
+}
